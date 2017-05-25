@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>储存</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="Hovace">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css"/>
+
+    <!-- Calendar Styling  -->
+    <link rel="stylesheet" href="assets/css/plugins/calendar/calendar.css"/>
+
+    <!-- Fonts  -->
+    <link href='assets/fonts/gooleapis.css' rel='stylesheet' type='text/css'>
+
+    <!-- Base Styling  -->
+    <link rel="stylesheet" href="assets/css/app/app.v1.css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/h5/html5shiv.js"></script>
+    <script src="assets/js/h5/respond.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+        .content .warper {
+            min-height: 88.2%;
+        }
+    </style>
+</head>
+<body data-ng-app>
+
+
+<!-- Preloader -->
+<div class="loading-container">
+    <div class="loading">
+        <div class="l1">
+            <div></div>
+        </div>
+        <div class="l2">
+            <div></div>
+        </div>
+        <div class="l3">
+            <div></div>
+        </div>
+        <div class="l4">
+            <div></div>
+        </div>
+    </div>
+</div>
+<!-- Preloader -->
+
+
+<aside class="left-panel">
+
+    <div class="user text-center">
+        <a href="personal-center.html">
+            <img src="assets/images/avtar/user.jpg" class="img-circle" alt="...">
+            <h4 class="user-name">张飞</h4>
+        </a>
+
+
+    </div>
+
+
+    <nav class="navigation">
+        <ul class="list-unstyled">
+            <li class="has-submenu"><a href="personal-record.html"><i class=" fa fa-user"></i> <span
+                    class="nav-label">取证中心</span></a>
+
+            </li>
+            <li class="has-submenu"><a href="file-upload.html"><i class=" glyphicon glyphicon-folder-close"></i> <span
+                    class="nav-label">附件箱</span></a>
+            </li>
+            <li class="has-submenu"><a href="digital-locker.html"><i class=" fa fa-folder"></i> <span
+                    class="nav-label">数字保险柜</span></a>
+
+            </li>
+        </ul>
+    </nav>
+
+</aside>
+<!-- Aside Ends-->
+
+<section class="content">
+
+
+    <header class="top-head container-fluid">
+        <button type="button" class="navbar-toggle pull-left">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+        <div class="navbar-left  pull-left hidden-xs">
+            <h3 style="margin: 0px;padding: 0px;line-height: 2;">储存完成</h3>
+        </div>
+
+        <nav class=" navbar-default hidden-xs" role="navigation">
+
+        </nav>
+
+
+    </header>
+    <!-- Header Ends -->
+
+
+    <div class="warper container-fluid">
+
+        <div id="content" class="text-center" style="padding: 100px 0px 50px 0px ;font-size: 20px">
+
+            <img src="assets/images/bg/ok.png" alt="成功">
+            <br>
+            <br>
+            <span id="isOk">已对文件进行加密储存</span>
+            <br>
+            <span id="ard">储存位置是:数字保险柜</span>
+
+        </div>
+
+        <div class=" col-md-12">
+            <img class="col-md-2 col-md-offset-5" src="assets/images/gif/ok.gif" alt="演示">
+        </div>
+
+
+
+    </div>
+    <div class="pull-right text-right" style="color: rgb(255,38,0);margin-top: -60px;padding-right: 20px">
+        <p>如需下载文件</p>
+        <p>请通过通用版扫描解密进行下载</p>
+    </div>
+    <!-- Warper Ends Here (working area) -->
+
+
+    <footer class="container-fluid footer text-center">
+        版权 &copy; 2016 <a href="http://www.bankeys.com.cn/" target="_blank">Bankeys</a>
+        <a href="install.html" class="pull-left" ><i class=" glyphicon glyphicon-download-alt"></i> <span class="nav-label">下载控件</span></a>
+        <a href="#" class="pull-right scrollToTop"><i class="fa fa-chevron-up"></i></a>
+    </footer>
+
+
+</section>
+<!-- Content Block Ends Here (right box)-->
+
+<script type="text/javascript">
+
+    //储存失败后页面
+    var oDiv=document.getElementById("content");
+    if(false){
+        oDiv.innerHTML='<img src="assets/images/bg/error.png" alt="失败">\
+        <br>\
+        <span id="isOk">失败</span>\
+                <br>\
+                <span id="ard">原因</span>';
+    }
+</script>
+
+<!-- JQuery v1.9.1 -->
+<script src="assets/js/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="assets/js/plugins/underscore/underscore-min.js"></script>
+<!-- Bootstrap -->
+<script src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+<!-- Globalize -->
+<script src="assets/js/globalize/globalize.min.js"></script>
+
+<!-- NanoScroll -->
+<script src="assets/js/plugins/nicescroll/jquery.nicescroll.min.js"></script>
+
+<!-- ToDo List Plugin -->
+<script src="assets/js/angular/todo.js"></script>
+
+
+<!-- Calendar JS -->
+<script src="assets/js/plugins/calendar/calendar.js"></script>
+<!-- Calendar Conf -->
+<script src="assets/js/plugins/calendar/calendar-conf.js"></script>
+
+
+<!-- Custom JQuery -->
+<script src="assets/js/app/custom.js" type="text/javascript"></script>
+
+
+</body>
+</html>
